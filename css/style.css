@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap');
+
+body {
+    background-image: url(../img/background.jpg);
+    background-size: cover;    
+    background-attachment: fixed;    
+    background-repeat: no-repeat;
+    font-family: 'Poppins', sans-serif;
+}
+.headerFlexContenedor {
+    font-family: 'Julius Sans One', sans-serif;
+    margin: 10px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: flex-start;
+    align-items: center;
+}
+
+.headerFlexContenedor:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+}
+
+.headerFlexContenedor:hover h1 a{
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.itemHeaderFlex1 {
+    flex-grow: 1;
+    align-self: baseline;
+    text-align: center;
+}
+
+.itemHeaderFlex2 {
+    flex-grow: 2;
+    align-self: baseline;
+    text-align: center;
+}
+
+.itemHeaderFlex1 h1 a {
+    text-decoration: none;
+    color: white;
+}
+
+.itemHeaderFlex1 h1 a:hover{
+    color: greenyellow;
+}
+
+.itemHeaderFlex1 h1 a:active{
+    color: rgb(240, 173, 74);
+}
+
+.itemHeaderFlex2 ul li{
+    display: inline-block;
+    justify-self: center;
+}
+
+.itemHeaderFlex2 ul li a {
+    text-decoration: none;
+    color: white;
+    padding-left: 20px;
+}
+
+.itemHeaderFlex2 ul li a:hover{
+    color: greenyellow;
+    text-decoration: underline;
+    font-weight: 800;
+}
+
+.mainFlexContenedor {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    color: white;
+    margin: 30px 20px;
+    padding: 20px;
+    display: flex;
+    gap: 40px;
+}
+
+.itemMainFlex1 h2 {
+    font-family: 'Julius Sans One', sans-serif;
+    color: rgb(240, 173, 74);
+    letter-spacing: 2px;
+    margin-left: 50px;
+}
+
+.itemMainFlex1 a{
+    text-decoration: none;
+    color: greenyellow;
+    float: right;
+    margin-right: 50px;
+}
+
+.itemMainFlex1 a:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 25px;
+    padding: 3px;
+}
+
+.itemMainFlex2 img {
+    border: solid 0.5px;
+    border-radius: 10px;
+    box-shadow: 0 10px 10px 0;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.sectionFlexContenedor {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    color: white;
+    margin: 30px 20px;
+    padding: 20px;
+    display: flex;
+    gap: 40px;
+    flex-direction: row-reverse;
+}
+
+.itemSectionFlex1 h2 {
+    font-family: 'Julius Sans One', sans-serif;
+    color: rgb(240, 173, 74);
+    letter-spacing: 2px;
+    margin-left: 50px;
+}
+
+.itemSectionFlex1 a{
+    text-decoration: none;
+    color: greenyellow;
+    float: right;
+    margin-right: 50px;
+}
+
+.itemSectionFlex1 a:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 25px;
+    padding: 3px;
+}
+
+.itemSectionFlex2 td {
+    border: solid 0.5px;
+    color: white;
+}
+
+.itemSectionFlex2 th {
+    color: greenyellow;
+    justify-self: center;
+}
+
+.itemSectionFlex2 iframe {
+    border: solid 0.5px;
+    border-radius: 10px;
+    box-shadow: 0 10px 10px 0;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.contenedorForm {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    margin: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+}
+
+.contenedorForm h2 {
+    letter-spacing: 2px;
+    color: rgb(240, 173, 74);
+}
+
+.contenedorForm fieldset {
+    border-color: white;
+    border-radius: 15px;
+    padding: 10px;
+    justify-items: center;
+}
+
+.contenedorForm fieldset legend {
+    color: greenyellow;
+    margin-left: 30px;
+}
+
+.contenedorForm .itemForm {
+    color: white;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.contenedorForm .itemForm input {
+    border: solid 0.5px;
+    border-radius: 3px;
+}
+
+.contenedorForm .itemForm textarea {
+    border: solid 0.5px;
+    border-radius: 3px;
+}
+
+.footerFlexContenedor {
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 15px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.itemFooterFlex1 a {
+    text-decoration: none;
+    color: white;
+    padding-left: 30px;
+}
+
+.itemFooterFlex1 a:hover{
+    color: greenyellow;
+    text-decoration: underline;
+}
+
+.itemFooterFlex2 a{
+    font-family: 'Julius Sans One', sans-serif;
+    text-decoration: none;
+    color: white;
+    letter-spacing: 3px;
+}
+
+.itemFooterFlex2 a:hover{
+    color: greenyellow;
+    letter-spacing: 5px;
+}
+
+.itemFooterFlex3 h5 {
+    color: rgba(255, 255, 255, 0.7);
+    padding-right: 30px;
+}
