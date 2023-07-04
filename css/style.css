@@ -80,6 +80,20 @@ body {
     gap: 40px;
 }
 
+@media (max-width: 425px) {
+    .mainFlexContenedor {
+        border-radius: 5px;
+        margin: 20px auto;
+        padding: 5px;
+        gap: 10px;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        justify-items: center;
+        align-items: center;
+    }
+}
+
 .itemMainFlex1 h2 {
     font-family: 'Julius Sans One', sans-serif;
     color: rgb(240, 173, 74);
@@ -108,7 +122,7 @@ body {
 }
 
 .contenedorGrid {
-    margin: 30px 60px;
+    margin: 30px auto;
     padding: 20px;
     display: grid;
     gap: 20px;
@@ -127,15 +141,41 @@ body {
     color: white;
 }
 
+@media (max-width: 425px) {
+    .contenedorGrid {
+        margin: 15px auto;
+        padding: 5px;
+        gap: 5px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .contenedorGrid img {
+        width: 150px;
+        height: auto;
+    }
+}
 .sectionFlexContenedor {
     background-color: rgba(0, 0, 0, 0.5);
     border-radius: 15px;
     color: white;
-    margin: 30px 20px;
+    margin: 30px auto;
     padding: 20px;
     display: flex;
     gap: 40px;
     flex-direction: row-reverse;
+}
+
+@media (max-width: 425px) {
+    .sectionFlexContenedor {
+        border-radius: 5px;
+        margin: 20px auto;
+        padding: 5px;
+        gap: 10px;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        justify-items: center;
+        align-items: center;
+    }
 }
 
 .itemSectionFlex1 h2 {
@@ -143,6 +183,14 @@ body {
     color: rgb(240, 173, 74);
     letter-spacing: 2px;
     margin-left: 50px;
+}
+
+@media (max-width: 425px) {
+    .itemSectionFlex1 h2 {
+        margin: auto;
+        letter-spacing: 0px;
+        text-align: center;
+    }
 }
 
 .itemSectionFlex1 a{
@@ -228,10 +276,24 @@ body {
     align-items: center;
 }
 
+@media (max-width: 425px) {
+    .footerFlexContenedor {
+        border-radius: 5px;
+        margin: auto;
+        font-size: 25px;
+    }
+}
+
 .itemFooterFlex1 a {
     text-decoration: none;
     color: white;
     padding-left: 30px;
+}
+
+@media (max-width: 425px) {
+    .itemFooterFlex1 a {
+        display: none;
+    }
 }
 
 .itemFooterFlex1 a:hover{
@@ -255,3 +317,6 @@ body {
     color: rgba(255, 255, 255, 0.7);
     padding-right: 30px;
 }
+
+
+
