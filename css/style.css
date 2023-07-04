@@ -19,6 +19,18 @@ body {
     align-items: center;
 }
 
+@media (max-width: 424px) {
+    .headerFlexContenedor {
+        visibility: hidden;
+    }
+}
+
+@media (min-width: 425px) {
+    .mobileNavBar {
+        visibility: hidden;
+        }
+}
+
 .headerFlexContenedor:hover {
     background-color: rgba(0, 0, 0, 0.3);
     border-radius: 10px;

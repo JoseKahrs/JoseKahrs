@@ -31,56 +31,74 @@
         </div>
     </header>
 
+    <nav class="navbar navbar-dark bg-dark fixed-top mobileNavBar">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../index.html">Coffee Uy</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Menu</h5>
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="./productos.html">Productos</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./bebidas.html">Bebidas</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./quienes.html">Sobre nosotros</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./contacto.html">Contacto</a>
+                </li>
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+
+
     <main>
         <div class="contenedorForm">
             <h2>Contactanos!</h2>
-            <form action="...">
+            <form>
                 <fieldset>
-                    <legend>Ingrese sus datos!</legend>
-                    <div class="itemForm">
-                        <label for="nombre">Nombre:</label>
-                        <input type="text" id="nombre" placeholder="Nombre" required>
-                    </div>
-                    <div class="itemForm">
-                        <label for="email">Correo electronico:</label>
-                        <input type="email" id="email" placeholder="Correo electronico" required>
-                    </div>
-                    <div class="itemForm">
-                        <label for="telefono">Telefono:</label>
-                        <input type="text" id="telefono" placeholder="Telefono" required>
-                    </div>
-                    <div class="itemForm">
-                    <label for="motivos">Motivo de contacto:</label>
-                        <select name="motivos" id="motivos">
-                            <option value="1">Reclamos</option>
-                            <option value="2">Consultas</option>
-                            <option value="3">Empleo</option>
-                            <option value="4">Pedido</option>
-                        </select>
-                    </div>
-                    <div class="itemForm">
-                        <label for="mensaje">Mensaje:</label>
-                        <textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Mensaje" required></textarea>
-                    </div>
-                    <div class="itemForm">
-                        <label for="archivo">Adjuntar archivo:</label>
-                        <input type="file">
-                    </div>
-                    <div class="itemForm">
-                        <label for="news">Quiero recibir informacion sobre nuevos productos y servicios, ofertas o recomendaciones por email </label>
-                        <input type="checkbox" value="news">
-                    </div>
-                    <div class="itemForm">
-                        <label for="terminos">Acepto terminos y condiciones</label>
-                        <input type="radio" name="opcion" value="1">Si
-                        <input type="radio" name="opcion" value="2">No
-                    </div>
-                    <div class="itemForm">
-                        <input type="submit" value="Enviar">
-                    </div>
-                </fieldset>  
+                <legend>Ingrese sus datos!</legend>
+                <div class="mb-3 itemForm">
+                    <label for="nombre" class="form-label">Nombre</label>
+                    <input type="text" id="disabledTextInput" class="form-control" placeholder="Nombre">
+                </div>
+                <div class="mb-3 itemForm">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" id="disabledTextInput" class="form-control" placeholder="Email">
+                </div>
+                <div class="mb-3 itemForm">
+                    <label for="telefono" class="form-label">Telefono</label>
+                    <input type="number" id="disabledTextInput" class="form-control" placeholder="Nombre">
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Motivo de contacto</label>
+                    <select name="motivos" class="form-select">
+                    <option>Reclamos</option>
+                    <option>Consultas</option>
+                    <option>Empleo</option>
+                    <option>Pedido</option>
+                    </select>
+                </div>
+                <div class="itemForm">
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Mensaje" required></textarea>
+            </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+                </fieldset>
             </form>
-        </div>    
+        </div>
     </main>
     
         <footer class="footerFlexContenedor">
