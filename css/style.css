@@ -95,7 +95,7 @@ body {
 @media (max-width: 425px) {
     .mainFlexContenedor {
         border-radius: 5px;
-        margin: 20px auto;
+        margin: 20px 5px;
         padding: 5px;
         gap: 10px;
         flex-direction: column;
@@ -150,12 +150,13 @@ body {
 .contenedorGrid .itemGrid {
     border: solid 0.5px;
     border-radius: 15px;
-    color: white;
+    box-shadow: 0 10px 10px 0;
+    color: rgba(0, 0, 0, 0.7);
 }
 
 @media (max-width: 425px) {
     .contenedorGrid {
-        margin: 15px auto;
+        margin: 15px 5px;
         padding: 5px;
         gap: 5px;
         grid-template-columns: repeat(2, 1fr);
@@ -176,10 +177,18 @@ body {
     flex-direction: row-reverse;
 }
 
+.itemSectionFlex img {
+    border: solid 0.5px;
+    border-radius: 15px;
+    box-shadow: 0 10px 10px 0;
+    color: rgba(0, 0, 0, 0.7);
+
+}
+
 @media (max-width: 425px) {
     .sectionFlexContenedor {
         border-radius: 5px;
-        margin: 20px auto;
+        margin: 20px 5px;
         padding: 5px;
         gap: 10px;
         flex-direction: column;
