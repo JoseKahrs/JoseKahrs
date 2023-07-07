@@ -33,7 +33,7 @@ body {
 
 .headerFlexContenedor:hover {
     background-color: rgba(0, 0, 0, 0.3);
-    border-radius: 10px;
+    border-radius: 5px;
 }
 
 .headerFlexContenedor:hover h1 a{
@@ -84,7 +84,7 @@ body {
 
 .mainFlexContenedor {
     background-color: rgba(0, 0, 0, 0.5);
-    border-radius: 15px;
+    border-radius: 5px;
     color: white;
     margin: 30px 20px;
     padding: 20px;
@@ -122,13 +122,13 @@ body {
 
 .itemMainFlex1 a:hover {
     background-color: rgba(0, 0, 0, 0.5);
-    border-radius: 25px;
+    border-radius: 5px;
     padding: 3px;
 }
 
 .itemMainFlex2 img {
     border: solid 0.5px;
-    border-radius: 10px;
+    border-radius: 5px;
     box-shadow: 0 10px 10px 0;
     color: rgba(0, 0, 0, 0.7);
 }
@@ -149,15 +149,15 @@ body {
 
 .contenedorGrid .itemGrid {
     border: solid 0.5px;
-    border-radius: 15px;
+    border-radius: 5px;
     box-shadow: 0 10px 10px 0;
     color: rgba(0, 0, 0, 0.7);
 }
 
 @media (max-width: 425px) {
     .contenedorGrid {
-        margin: 15px 5px;
-        padding: 5px;
+        margin: 15px 10px;
+        padding: 10px;
         gap: 5px;
         grid-template-columns: repeat(2, 1fr);
     }
@@ -168,21 +168,28 @@ body {
 }
 .sectionFlexContenedor {
     background-color: rgba(0, 0, 0, 0.5);
-    border-radius: 15px;
+    border-radius: 5px;
     color: white;
     margin: 30px 20px;
     padding: 20px;
     display: flex;
     gap: 40px;
     flex-direction: row-reverse;
+    justify-content: center;
 }
 
-.itemSectionFlex img {
+.itemSectionFlex2 img {
     border: solid 0.5px;
-    border-radius: 15px;
+    border-radius: 5px;
     box-shadow: 0 10px 10px 0;
     color: rgba(0, 0, 0, 0.7);
+}
 
+.sectionFlexContenedor iframe {
+    border: solid 0.5px;
+    border-radius: 5px;
+    box-shadow: 0 10px 10px 0;
+    color: rgba(0, 0, 0, 0.7);
 }
 
 @media (max-width: 425px) {
@@ -196,6 +203,11 @@ body {
         align-content: center;
         justify-items: center;
         align-items: center;
+    }
+
+    .sectionFlexContenedor iframe {
+        width: auto;
+        height: auto;
     }
 }
 
@@ -223,30 +235,44 @@ body {
 
 .itemSectionFlex1 a:hover {
     background-color: rgba(0, 0, 0, 0.5);
-    border-radius: 25px;
+    border-radius: 5px;
     padding: 3px;
 }
 
-.itemSectionFlex2 td {
+#tablaTiposCafe table{
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+    padding: 15px;
+    width: 800px;
+    text-align: center;
+}
+
+@media (max-width: 425px) {
+    #tablaTiposCafe table {
+        width: auto;
+    }
+}
+
+#tablaTiposCafe td {
     border: solid 0.5px;
     color: white;
 }
 
-.itemSectionFlex2 th {
+#tablaTiposCafe th {
     color: rgba(172, 255, 47, 0.7);
     justify-self: center;
 }
 
 .itemSectionFlex2 iframe {
     border: solid 0.5px;
-    border-radius: 10px;
+    border-radius: 5px;
     box-shadow: 0 10px 10px 0;
     color: rgba(0, 0, 0, 0.7);
 }
 
 .contenedorForm {
     background-color: rgba(0, 0, 0, 0.5);
-    border-radius: 15px;
+    border-radius: 5px;
     margin: 20px;
     padding: 20px;
     display: flex;
@@ -262,7 +288,7 @@ body {
 
 .contenedorForm fieldset {
     border-color: white;
-    border-radius: 15px;
+    border-radius: 5px;
     padding: 10px;
     justify-items: center;
 }
@@ -280,17 +306,17 @@ body {
 
 .contenedorForm .itemForm input {
     border: solid 0.5px;
-    border-radius: 3px;
+    border-radius: 5px;
 }
 
 .contenedorForm .itemForm textarea {
     border: solid 0.5px;
-    border-radius: 3px;
+    border-radius: 5px;
 }
 
 .footerFlexContenedor {
     background-color: rgba(0, 0, 0, 0.3);
-    border-radius: 15px;
+    border-radius: 5px;
     margin-bottom: 10px;
     display: flex;
     justify-content: space-between;
@@ -338,4 +364,3 @@ body {
     color: rgba(255, 255, 255, 0.7);
     padding-right: 30px;
 }
-
