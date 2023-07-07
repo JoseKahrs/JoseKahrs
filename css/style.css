@@ -95,7 +95,8 @@ body {
 @media (max-width: 425px) {
     .mainFlexContenedor {
         border-radius: 5px;
-        margin: 20px 5px;
+        margin: auto 5px;
+        margin-top: -50px;
         padding: 5px;
         gap: 10px;
         flex-direction: column;
