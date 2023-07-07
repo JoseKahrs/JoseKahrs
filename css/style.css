@@ -328,7 +328,10 @@ body {
     .footerFlexContenedor {
         border-radius: 5px;
         margin: auto;
-        font-size: 25px;
+        justify-content: center;
+        align-content: center;
+        justify-items: center;
+        align-items: center;
     }
 }
 
@@ -364,4 +367,10 @@ body {
 .itemFooterFlex3 h5 {
     color: rgba(255, 255, 255, 0.7);
     padding-right: 30px;
+}
+
+@media (max-width: 425px) {
+    .itemFooterFlex3 h5 {
+        display: none;
+    }
 }
