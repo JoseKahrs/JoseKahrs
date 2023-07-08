@@ -328,6 +328,7 @@ body {
     .footerFlexContenedor {
         border-radius: 5px;
         margin: auto;
+        margin-bottom: 10px;
         justify-content: center;
         align-content: center;
         justify-items: center;
